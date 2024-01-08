@@ -1,0 +1,86 @@
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('../assets/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+  .logo {
+    padding-top: 50px; /* Adjust the padding as needed */
+    padding-bottom: 50px; /* Adjust the padding as needed */
+  }
+
+  .countdown {
+    font-size: 18rem;
+    letter-spacing: 5px;
+    font-weight: 900;
+  }
+  .countdown span {
+    padding: 0 15px;
+  }
+  .label {
+    font-size: 6.5rem;
+    vertical-align: bottom;
+  }
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  .subscribe-form {
+    margin-top: 20px;
+  }
+  .subscribe-input {
+    border-radius: 20px 0 0 20px;
+    border: 2px solid #27ae60;
+    padding: 5px 10px;
+  }
+  .subscribe-btn {
+    border-radius: 0 20px 20px 0;
+    border: 2px solid #27ae60;
+    background-color: #27ae60;
+    color: white;
+    padding: 5px 20px;
+  }
+  .footer-text {
+    font-size: 0.75rem;
+    margin-top: 50px;
+  }
+ 
+  h1 {
+    font-size: 8rem;
+    font-weight: 700; /* You can choose from 300 to 900, depending on how bold you want it */
+    margin-bottom: 50px; /* Adjust space below the h1 */
+    color: #fff;
+  }
+  .outlined-text {
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .text-shadow {
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  p {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+  }
+  .text-stroke-trick {
+    -webkit-text-stroke: 2px #000;
+  }
+  
+  .text-stroke-trick::after {
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-text-stroke: 0px #000;
+  }
+  
+  .wrapper {
+    position: relative;
+  }
