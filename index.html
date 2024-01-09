@@ -7,47 +7,69 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="styles/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
-<body>
-<div class="container-fluid h-100">
+<body class="d-flex flex-column h-100">
+  <main class="flex-grow-1">
+<div class="container-fluid flex-grow-1">
     <div class="row justify-content-center">
-        <div class="col-4 logo">
+        <div class="col-3 logo">
           <img src="assets/logo.svg" alt="Company Logo" class="img-fluid mx-auto d-block">
         </div>
+     
       </div>
 
   <div class="row">
     <div class="container-fluid">
-  <div class="countdown">
-    <span>20 <small class="label">d</small></span>
-    <span>13 <small class="label">h</small></span>
-    <span>36 <small class="label">m</small></span>
-  </div>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span>20</span><small class="label">d</small>
+        </div>
+        <div class="countdown-item">
+          <span>13</span><small class="label">h</small>
+        </div>
+        <div class="countdown-item">
+          <span>36</span><small class="label">m</small>
+        </div>
+      </div>
 </div>
 </div>
-<h1><span class="outlined-text">We are</span> Coming Soon.</h1>
-<p class="text-shadow">text-shadow</p>
-<div class="wrapper">
-    <p class="text-stroke-trick" data-text="text-stroke-trick">text-stroke-trick</p>
-  </div>
 
-  <div class="social-icons">
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-  </div>
-  <form class="subscribe-form">
-    <input type="email" class="subscribe-input" placeholder="Email">
-    <button type="submit" class="subscribe-btn">Subscribe</button>
-  </form>
-  <div class="footer-text">
-    All Rights Reserved to Al Shirawi Machinery
+<div class="container-fluid padding-coming-soon">
+  <div class="row">
+    <div style="margin-bottom: -20px;" class="col-7 d-flex flex-column justify-content-between px-5">
+      <div class="mt-auto">
+        <h1 style="line-height: 91px;" class="text-left"><span class="outlined-text">We are</span><br> Coming Soon.</h1>
+      </div>
+    
+    </div>
+    <div class="col-5 d-flex flex-column justify-content-between">
+      <form class="subscribe-form text-left mt-auto"> <!-- mt-auto pushes the form to the bottom -->
+        <h3 class="text-left">Get Notified when we launch</h3>
+        <input type="email" class="subscribe-input" placeholder="Email">
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+      </form>
+    </div>
   </div>
 </div>
+</div>
+</div>
+</main>
+
+<footer class="footer mt-auto text-white pb-3">
+  <div class="container text-center">
+    <div class="social-icons pb-2">
+      <a href="#"><img src="assets/social_media_icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="#"><img src="assets/social_media_icons/insta.svg" alt="Instagram"></a>
+      <a href="#"><img src="assets/social_media_icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="assets/social_media_icons/X.svg" alt="Twitter"></a>
+    </div>
+    <div class="all-rights pt-4">
+      All Rights Reserved to Al Shirawi Machinery
+    </div>
+  </div>
+</footer>
+
+
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.0/dist/umd/popper.min.js"></script>

@@ -1,86 +1,125 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+html {
+  height: 100%; /* Ensure the full height for the body */
+}
   body {
     font-family: 'Montserrat', sans-serif;
     background: url('../assets/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: white;
+    /* color: white; */
     text-align: center;
+    font-weight: 800;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100%; 
   }
   .logo {
-    padding-top: 50px; /* Adjust the padding as needed */
+    padding-top: 80px; /* Adjust the padding as needed */
     padding-bottom: 50px; /* Adjust the padding as needed */
   }
 
   .countdown {
-    font-size: 18rem;
-    letter-spacing: 5px;
+    font-size: 17rem;
     font-weight: 900;
+    color: white; /* Set numbers color to white */
+    margin-top: -30px;
+
   }
+  .countdown-item {
+    display: inline-block;
+    margin-right: 15px; /* Adjust spacing between items */
+  }
+  
   .countdown span {
     padding: 0 15px;
   }
   .label {
-    font-size: 6.5rem;
-    vertical-align: bottom;
+    font-size: 5rem;
+    /* vertical-align: bottom; */
+    color: transparent; /* Makes the text transparent */
+    -webkit-text-stroke: 2px #00E600; /* Green text outline */
+    font-weight: 800 !important;
   }
   .social-icons a {
     color: white;
     margin: 0 10px;
     font-size: 1.5rem;
   }
-  .subscribe-form {
+  /* .subscribe-form {
     margin-top: 20px;
-  }
+  } */
   .subscribe-input {
-    border-radius: 20px 0 0 20px;
-    border: 2px solid #27ae60;
-    padding: 5px 10px;
+    border-radius: 50px 0 0 50px;
+    padding: 16px 111px 16px 19px;
   }
   .subscribe-btn {
     border-radius: 0 20px 20px 0;
-    border: 2px solid #27ae60;
-    background-color: #27ae60;
+    border: solid #00E600;
+    background-color: #00E600;
     color: white;
-    padding: 5px 20px;
+    padding: 13px 34px;
+    margin-left: -7px;
   }
   .footer-text {
     font-size: 0.75rem;
     margin-top: 50px;
+    color: white;
   }
  
   h1 {
-    font-size: 8rem;
+    font-size: 5.5rem;
     font-weight: 700; /* You can choose from 300 to 900, depending on how bold you want it */
-    margin-bottom: 50px; /* Adjust space below the h1 */
-    color: #fff;
-  }
-  .outlined-text {
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #00E600;
   }
 
-  .text-shadow {
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-      -1px 1px 0 #000, 1px 1px 0 #000;
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700; /* You can choose from 300 to 900, depending on how bold you want it */
+    color: #ffffff;
   }
-  p {
-    color: #fff;
-    font-family: Montserrat, sans-serif;
-    font-size: 72px;
-    font-weight: 700;
+ 
+  .outlined-text {
+    font-size: 5.5rem; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #0000; /* Text color */
+    -webkit-text-stroke: 2px #fcfcfc; /* Text stroke for outline effect */
+    text-align: center;
   }
-  .text-stroke-trick {
-    -webkit-text-stroke: 2px #000;
+  .padding-coming-soon {
+    padding-left: 12rem;
+    margin-top: -38px;
+
   }
-  
-  .text-stroke-trick::after {
-    content: attr(data-text);
-    color: white;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    -webkit-text-stroke: 0px #000;
+
+  .footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
   }
-  
-  .wrapper {
-    position: relative;
+  .social-icons img {
+    width: 20px; /* Adjust as needed */
+    height: auto;
+    margin: 0 5px; /* Space between icons */
+  }
+
+  main.flex-grow-1 {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .all-rights  {
+    font-weight: 400;
+    font-size: 12px;
   }
