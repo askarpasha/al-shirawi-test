@@ -109,6 +109,9 @@ body {
     font-size: 2rem !important;
     line-height: 0px;
   }
+  .custom-line-height {
+    line-height: 50px !important;
+  }
 }
 
 .footer-text {
@@ -121,6 +124,10 @@ h1 {
   font-size: 5.5rem;
   font-weight: 700; /* You can choose from 300 to 900, depending on how bold you want it */
   color: #00e600;
+}
+
+.custom-line-height {
+  line-height: 91px;
 }
 
 h3 {
