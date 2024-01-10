@@ -18,35 +18,40 @@
 </div>
 
 
-<div class="container-fluid">
+<div class="container-fluid countdown-padding">
   <div class="row justify-content-center">
     <div class="col-4 col-md-4 countdown-item">
-      <span>20</span><small class="label">d</small>
+      <span id="days"></span><small class="label">d</small>
     </div>
     <div class="col-4 col-md-4 countdown-item">
-      <span>13</span><small class="label">h</small>
+      <span id="hours"></span><small class="label">h</small>
     </div>
     <div class="col-4 col-md-4 countdown-item padding-one">
-      <span>36</span><small class="label">m</small>
+      <span id="minutes"></span><small class="label">m</small>
     </div>
   </div>
 </div>
 
 
 
-<div class="container-fluid padding-coming-soon">
+<div class="container-fluid comingsoon-padding">
   <div class="row">
-    <div class="col-md-7 col-12 d-flex flex-column justify-content-between px-5" style="margin-bottom: -20px;">
+    <div class="col-md-7 col-12 d-flex flex-column justify-content-between px-md-5 px-4" style="margin-bottom: -20px;">
       <div class="mt-auto">
         <h1 class="text-left custom-line-height"><span class="outlined-text">We are</span><br><span class="remaining-text">Coming Soon.</span></h1>
       </div>
     </div>
     <div class="col-md-5 col-12 d-flex flex-column justify-content-between">
-      <form class="subscribe-form text-left mt-auto"> <!-- mt-auto pushes the form to the bottom -->
-        <h3 class="text-left">Get Notified when we launch</h3>
-        <input type="email" class="subscribe-input" placeholder="Email">
-        <button type="submit" class="subscribe-btn">Subscribe</button>
-      </form>
+
+      <form class="subscribe-form text-center text-md-left mt-auto">
+        <h3 class="mb-2 padding-sub-text">Get Notified when we launch</h3>
+        <div class="text-left text-md-right">
+          <input type="email" class="subscribe-input" placeholder="Email">
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </div>
+ 
+    </form>
+    
     </div>
   </div>
 </div>
@@ -55,7 +60,7 @@
 </div>
 </main>
 
-<footer class="footer mt-auto text-white pb-3">
+<footer class="footer mt-auto text-white py-4">
   <div class="container text-center">
     <div class="social-icons pb-2">
       <a href="#"><img src="assets/social_media_icons/linkedin.svg" alt="LinkedIn"></a>
@@ -71,6 +76,7 @@
 
 
 <!-- Bootstrap JS and dependencies -->
+<script src="scripts/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
