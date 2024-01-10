@@ -1,125 +1,168 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat-Regular.otf') format('opentype');
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat-ExtraBold.otf') format('opentype');
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-ExtraBold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
 }
 html {
   height: 100%; /* Ensure the full height for the body */
 }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background: url('../assets/background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    /* color: white; */
-    text-align: center;
-    font-weight: 800;
-    height: 100%;
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    height: 100%; 
-  }
-  .logo {
-    padding-top: 80px; /* Adjust the padding as needed */
-    padding-bottom: 50px; /* Adjust the padding as needed */
-  }
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("../assets/background-image.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  /* color: white; */
+  text-align: center;
+  font-weight: 800;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  height: 100%;
+}
+.logo {
+  padding-top: 80px; /* Adjust the padding as needed */
+  padding-bottom: 50px; /* Adjust the padding as needed */
+}
 
-  .countdown {
-    font-size: 17rem;
-    font-weight: 900;
-    color: white; /* Set numbers color to white */
-    margin-top: -30px;
+.countdown {
+  font-size: 17rem;
+  font-weight: 900;
+  color: white; /* Set numbers color to white */
+  margin-top: -30px;
+}
+/* .countdown-item {
+  display: inline-block;
+  margin-right: 15px;
+} */
 
-  }
+@media (max-width: 480px) {
   .countdown-item {
-    display: inline-block;
-    margin-right: 15px; /* Adjust spacing between items */
+    font-size: 4rem !important; /* Larger font size for larger screens */
   }
-  
-  .countdown span {
-    padding: 0 15px;
-  }
+}
+
+.label {
+  font-size: 2rem; /* Adjust label font size for smaller screens */
+  color: transparent;
+  -webkit-text-stroke: 2px #00e600;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
   .label {
-    font-size: 5rem;
-    /* vertical-align: bottom; */
-    color: transparent; /* Makes the text transparent */
-    -webkit-text-stroke: 2px #00E600; /* Green text outline */
-    font-weight: 800 !important;
+    font-size: 5rem; /* Larger font size for labels on larger screens */
   }
-  .social-icons a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.5rem;
-  }
-  /* .subscribe-form {
+}
+
+.countdown-item {
+  text-align: center;
+  font-weight: 900;
+  color: white;
+  font-size: 15rem; /* Adjust for smaller screens */
+}
+
+.countdown span {
+  padding: 0 15px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+/* .subscribe-form {
     margin-top: 20px;
   } */
-  .subscribe-input {
-    border-radius: 50px 0 0 50px;
-    padding: 16px 111px 16px 19px;
-  }
+.subscribe-input {
+  border-radius: 50px 0 0 50px;
+  padding: 16px 111px 16px 19px;
+}
+.subscribe-btn {
+  border-radius: 0 20px 20px 0;
+  border: solid #00e600;
+  background-color: #00e600;
+  color: white;
+  padding: 13px 34px;
+  margin-left: -7px;
+}
+
+@media (max-width: 480px) {
   .subscribe-btn {
-    border-radius: 0 20px 20px 0;
-    border: solid #00E600;
-    background-color: #00E600;
-    color: white;
-    padding: 13px 34px;
-    margin-left: -7px;
+    padding: 13px 13px;
   }
-  .footer-text {
-    font-size: 0.75rem;
-    margin-top: 50px;
-    color: white;
+  .subscribe-input {
+    padding: 16px 0px 16px 19px;
   }
- 
-  h1 {
-    font-size: 5.5rem;
-    font-weight: 700; /* You can choose from 300 to 900, depending on how bold you want it */
-    color: #00E600;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 700; /* You can choose from 300 to 900, depending on how bold you want it */
-    color: #ffffff;
-  }
- 
   .outlined-text {
-    font-size: 5.5rem; /* Adjust the size as needed */
-    font-weight: bold;
-    color: #0000; /* Text color */
-    -webkit-text-stroke: 2px #fcfcfc; /* Text stroke for outline effect */
-    text-align: center;
+    font-size: 2rem !important; /* Adjust the size as needed */
+    line-height: 0px;
   }
+  .remaining-text {
+    font-size: 2rem !important;
+    line-height: 0px;
+  }
+}
+
+.footer-text {
+  font-size: 0.75rem;
+  margin-top: 50px;
+  color: white;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 700; /* You can choose from 300 to 900, depending on how bold you want it */
+  color: #00e600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700; /* You can choose from 300 to 900, depending on how bold you want it */
+  color: #ffffff;
+}
+
+.outlined-text {
+  font-size: 5.5rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #0000; /* Text color */
+  -webkit-text-stroke: 2px #fcfcfc; /* Text stroke for outline effect */
+  text-align: center;
+}
+.padding-coming-soon {
+  padding-left: 12rem;
+  margin-top: -38px;
+}
+
+@media (max-width: 480px) {
   .padding-coming-soon {
-    padding-left: 12rem;
+    padding-left: 0rem;
     margin-top: -38px;
-
   }
+}
 
-  .footer {
-    margin-top: auto; /* Pushes the footer to the bottom */
-  }
-  .social-icons img {
-    width: 20px; /* Adjust as needed */
-    height: auto;
-    margin: 0 5px; /* Space between icons */
-  }
+.footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+.social-icons img {
+  width: 20px; /* Adjust as needed */
+  height: auto;
+  margin: 0 5px; /* Space between icons */
+}
 
-  main.flex-grow-1 {
+main.flex-grow-1 {
+  display: flex;
+  flex-direction: column;
+}
 
-    display: flex;
-    flex-direction: column;
-  }
-
-  .all-rights  {
-    font-weight: 400;
-    font-size: 12px;
-  }
+.all-rights {
+  font-weight: 400;
+  font-size: 12px;
+}
